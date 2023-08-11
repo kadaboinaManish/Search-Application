@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <title>SPA Example</title>
+</head>
+<body>
+  <div id="home" class="page">
+    <section aria-label="Newest Photos">
+      <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+        <ul data-slides>
+          <li class="slide" data-active>
+            <img src="background.jpg" alt="Nature Image #1">
+          </li>
+          <li class="slide">
+            <img src="background-2.jpg" alt="Nature Image #2">
+          </li>
+          <li class="slide">
+            <img src="background-3.jpg" alt="Nature Image #3">
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div id="box">
+      <input type="text" id="userInput" placeholder="Enter City Name">
+      <button id="submitButton">Submit</button>
+    </div>
+    <div id="autocomplete-wrapper">
+
+    </div>
+    <nav id="nav-bar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#page1">Weather</a></li>
+      <li><a href="#page2">Image Search</a></li>
+      <li><a href="#page3">Restaurant</a></li>
+    </nav>
+    <hr/>
+  </div>
+  <div class="main-container">
+    <main id="content">
+        <div id="page1" class="page">
+            <div id="page1Content">
+              <div id="weatherResult" class="card"></div>
+            </div>
+          </div>
+        <div id="page2" class="page">
+          <div id="page2Content">
+            <button id ="show-more-btn">Show More</button>
+          </div>
+
+        </div>
+        <div id="page3" class="page">
+          <div id="page3Content"></div>
+        </div>
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
